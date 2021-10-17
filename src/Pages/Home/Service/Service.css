@@ -1,0 +1,28 @@
+.service-details{
+    color: #000000;
+    text-decoration: none;
+}
+
+.service-info{
+    height: 350px;
+}
+
+.add-to-cart-button{
+    background-color: #f91944;
+    border: none;
+    border-radius: 50px;
+    padding: 5px 15px;
+    border: 2px solid transparent;
+}
+
+.add-to-cart-button:hover{
+    background-color: transparent;
+    color: #000000;
+    border: 2px solid #f91944;
+}
+
+.add-to-cart-button:active{
+    background-color: transparent;
+    color: #000000;
+    border: 2px solid #f91944;
+}

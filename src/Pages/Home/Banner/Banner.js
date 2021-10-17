@@ -3,8 +3,9 @@ import './Banner.css'
 
 const Banner = () => {
     return (
-        <div>
-            <h2>Banner Section</h2>
+        <div className="banner container-fluid">
+            <h2>Why we are the best?</h2>
+            <button className="search-button">Learn More</button>
         </div>
     );
 };
