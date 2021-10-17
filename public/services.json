@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "service 1",
+        "description": "description 1",
+        "price": 100,
+        "img": "https://i.ibb.co/Kmq4LsL/s1.jpg"
+    },
+    {
+        "id": 2,
+        "title": "service 2",
+        "description": "description 2",
+        "price": 120,
+        "img": "https://i.ibb.co/2cpjjs2/s2.jpg"
+    },
+    {
+        "id": 3,
+        "title": "service 3",
+        "description": "description 3",
+        "price": 95,
+        "img": "https://i.ibb.co/1zbHC2D/s3.jpg"
+    },
+    {
+        "id": 4,
+        "title": "service 4",
+        "description": "description 4",
+        "price": 290,
+        "img": "https://i.ibb.co/12PBGkX/s4.jpg"
+    },
+    {
+        "id": 5,
+        "title": "service 5",
+        "description": "description 5",
+        "price": 330,
+        "img": "https://i.ibb.co/CPzBJLV/s5.jpg"
+    },
+    {
+        "id": 6,
+        "title": "service 6",
+        "description": "description 6",
+        "price": 230,
+        "img": "https://i.ibb.co/WKdZDCP/Modern-rehabilitation-physiotherapy-worker-with-senior-client.jpg"
+    }
+]
