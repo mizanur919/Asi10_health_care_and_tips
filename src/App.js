@@ -5,6 +5,7 @@ import Header from './Pages/Shared/Header/Header';
 import Home from './Pages/Home/Home/Home'
 import NotFound from './Pages/NotFound/NotFound'
 import Login from './Pages/Login/Login';
+import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route path="/login">
             <Login></Login>
+          </Route>
+          <Route path="/servicedetails/:serviceId">
+            <ServiceDetails></ServiceDetails>
           </Route>
           <Route path="*">
             <NotFound></NotFound>
