@@ -5,11 +5,11 @@ import useAuth from '../../contexts/useAuth';
 
 
 const Login = () => {
-    const {signInUsingGoogle, isLoading, setIsLoading} = useAuth();
+    const {signInUsingGoogle, setIsLoading} = useAuth();
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || "/home";
-
+    
     const handleLogIn = () =>{
         setIsLoading(true)
         signInUsingGoogle()
@@ -20,7 +20,7 @@ const Login = () => {
     }
     return (
         <div className="login-container d-flex justify-content-center align-items-center">
-            <div className="bg-white p-4 rounded col-md-3 mx-auto align-items-center">
+            <div className="bg-white login-form rounded col-md-3">
                 <h4 className="font-weight-bold mb-4 text-uppercase">Therapy Care Point</h4>
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">

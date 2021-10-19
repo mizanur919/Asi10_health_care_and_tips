@@ -1,43 +1,43 @@
 [
     {
         "id": 1,
-        "title": "service 1",
-        "description": "description 1",
+        "title": "Ultrasound Of Balancing",
+        "description": "Ultrasound is a deep heating treatment used to treat many musculoskeletal conditions like sprains, strains, or tendonitis.1﻿ Ultrasound is administered by your physical therapist using an ultrasound machine. A wand called a sound head is pressed gently against your skin and moved in small circular sweeps near the site of injury. A small amount of gel is used so the ultrasound waves are absorbed into the skin and muscles.",
         "price": 100,
         "img": "https://i.ibb.co/zb4f9Dw/s1.png"
     },
     {
         "id": 2,
-        "title": "service 2",
-        "description": "description 2",
+        "title": "Electrical Stimulation and TENS",
+        "description": "Electrical stimulation2﻿ and TENS (transcutaneous electrical neuromuscular stimulation)3﻿ is occasionally used in physical therapy to help decrease pain around injured tissue. There are two theories about how the stimulation works: the gate theory and the opiate theory. Other forms of electrical stimulation may be used to contract muscles. This is called neuromuscular electrical stimulation (NMES) and is used to help your injured muscles.",
         "price": 120,
         "img": "https://i.ibb.co/bPTPtf0/s2.png"
     },
     {
         "id": 3,
-        "title": "service 3",
-        "description": "description 3",
+        "title": "Traction",
+        "description": "To use lumbar traction, you must be strapped into a mechanical machine. There is a vest that helps support your ribs and another device that wraps around your pelvis. The vest and pelvic device are stabilized with straps, and a mechanical force is applied with a machine. Cervical traction is applied in either the sitting or lying position. If sitting, a harness is attached to the head and a pulley system is used with a small weight attached. The weight provides the traction force while you sit comfortably in a chair. In lying, or supine, traction, a specific device is used. You must lie down on your back and strap your forehead into the device. Then, a pneumatic pump is used to help provide the traction force to your neck.",
         "price": 95,
         "img": "https://i.ibb.co/vZL8jDK/s3.png"
     },
     {
         "id": 4,
-        "title": "service 4",
-        "description": "description 4",
+        "title": "Joint Mobilization",
+        "description": "Joint mobilization occurs when your physical therapist passively moves the joints of your body in specific directions. This can help to decrease pain and improve mobility.5﻿ While we often think of our joints moving as hinges, there is a gliding motion that also occurs between the joints of the body. This gliding motion is increased during joint mobilizations. The degree to which your therapist moves each joint depends on the amount of pressure and the direction of force applied to the joint.",
         "price": 290,
         "img": "https://i.ibb.co/QcH4Y06/s4.png"
     },
     {
         "id": 5,
-        "title": "service 5",
-        "description": "description 5",
+        "title": "Massage for relaxing",
+        "description": "Massage is using the hands to knead the injured tissues of your body to help decrease pain, improve circulation, and decrease muscle tension. There are many massage techniques, including effleurage, petrissage, and trigger point massage.",
         "price": 330,
         "img": "https://i.ibb.co/dMf0C56/s5.png"
     },
     {
         "id": 6,
-        "title": "service 6",
-        "description": "description 6",
+        "title": "Iontophoresis",
+        "description": "Electrical stimulation that is used to deliver medication across the skin to inflamed or injured tissues. Most often, a steroid like dexamethasone is used in the treatment of inflammation. This steroid can help decrease pain and swelling of tissues that occurs when they are inflamed.Iontophoresis can be used in the treatment of other conditions as well, depending upon the medication that is used during treatment.",
         "price": 230,
         "img": "https://i.ibb.co/CmdT13H/s6.png"
     }

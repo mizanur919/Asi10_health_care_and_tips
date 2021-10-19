@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './Pages/Shared/Header/Header';
@@ -8,6 +8,8 @@ import Login from './Pages/Login/Login';
 import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
 import AuthProvider from './contexts/AuthProvider';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+import Signup from './Pages/Login/Signup/Signup';
+import Footer from './Pages/Shared/Footer/Footer';
 
 function App() {
   return (
@@ -25,6 +27,9 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
+            <Route path="/signup">
+              <Signup></Signup>
+            </Route>
             <PrivateRoute path="/servicedetails/:serviceId">
               <ServiceDetails></ServiceDetails>
             </PrivateRoute>
@@ -32,6 +37,7 @@ function App() {
               <NotFound></NotFound>
             </Route>
           </Switch>
+          <Footer></Footer>
         </Router>
       </AuthProvider>
     </div>
