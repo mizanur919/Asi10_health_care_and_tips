@@ -49,6 +49,7 @@ const Signup = () => {
         <div className="login-container d-flex justify-content-center align-items-center">
             <div className="bg-white p-4 rounded col-md-3 mx-auto align-items-center">
                 <h4 className="font-weight-bold mb-4 text-uppercase">Therapy Care Point</h4>
+                <h6 className="mt-3 mb-4 fw-bold text-info">Create a new account</h6>
                 <Form onSubmit={handleSignUp}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Control onBlur={handleName} type="text" placeholder="Name" required/>
@@ -62,7 +63,7 @@ const Signup = () => {
                         <Form.Control onBlur={handlePassword} type="password" placeholder="Password" required/>
                         <span className="text-danger">{error}</span>
                     </Form.Group>
-                    <button className="btn btn-primary w-100" type="submit">Sign Up</button>
+                    <button className="btn btn-primary w-100" type="submit">Sign Up</button><br /><br />
                 </Form>
                 <NavLink className="new-account" as={Link} to="/login">Already have an account?</NavLink>
             </div>

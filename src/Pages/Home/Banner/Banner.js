@@ -4,8 +4,11 @@ import './Banner.css'
 const Banner = () => {
     return (
         <div className="banner container-fluid">
-            <h2>Welcome To <br /> <span className="text-uppercase">Therapy Care Point</span></h2>
-            <button className="search-button">Learn More</button>
+            <div className="row">
+                <div className="col-md-12">
+                    <h2 className="text-center">Welcome To <br /> <span className="text-uppercase">Therapy Care Point</span></h2>
+                </div>
+            </div>
         </div>
     );
 };

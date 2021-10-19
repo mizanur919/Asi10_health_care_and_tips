@@ -13,7 +13,7 @@ const OurExpert = ({ singleSpecialist }) => {
                     <p className="card-text">Specialist In: {designation}</p>
                     <h6>Experience: {experience}</h6>
                 </div>
-                <div style={{margin: "20px 0"}}>
+                <div className="mx-auto" style={{margin: "20px 0"}}>
                     <Link><i style={{color: "#212529", fontSize:"30px"}} class="fab fa-facebook-square"></i></Link>
                     <Link><i style={{color: "#212529", fontSize:"30px", margin: "0 10px"}} class="fab fa-twitter-square"></i></Link>
                     <Link><i style={{color: "#212529", fontSize:"30px"}} class="fab fa-linkedin"></i></Link>

@@ -1,4 +1,8 @@
-.login-form{
+.login-container{
+    background-color: #607d8b14;
     height: 100vh;
-    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }

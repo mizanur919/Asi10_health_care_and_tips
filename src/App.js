@@ -10,10 +10,12 @@ import AuthProvider from './contexts/AuthProvider';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Signup from './Pages/Login/Signup/Signup';
 import Footer from './Pages/Shared/Footer/Footer';
+import TalkToExperts from './Pages/TalkToExperts/TalkToExperts';
+import AboutUs from './Pages/AboutUs/AboutUs';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <AuthProvider>
         <Router>
           <Header></Header>
@@ -33,6 +35,12 @@ function App() {
             <PrivateRoute path="/servicedetails/:serviceId">
               <ServiceDetails></ServiceDetails>
             </PrivateRoute>
+            <PrivateRoute path="/talktoexperts">
+              <TalkToExperts></TalkToExperts>
+            </PrivateRoute>
+            <Route className="/aboutus">
+              <AboutUs></AboutUs>
+            </Route>
             <Route path="*">
               <NotFound></NotFound>
             </Route>

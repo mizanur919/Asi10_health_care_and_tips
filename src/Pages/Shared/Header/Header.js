@@ -13,12 +13,14 @@ const Header = () => {
                 <Navbar className="header-nav" variant="light" sticky="top">
                     <Container>
                         <Nav.Link>
-                            <Navbar.Brand as={HashLink} to="/home#home" className="brand"><span className="text-white">Therapy Care Point</span></Navbar.Brand>
+                            <Navbar.Brand as={HashLink} to="/home#home" className="brand"><span className="text-white text-uppercase fw-bold">Therapy <span className="text-info">Care</span> Point</span></Navbar.Brand>
                         </Nav.Link>
 
-                        <Nav className="justify-content-end">
+                        <Nav className="justify-content-end my-nav">
                             <Nav.Link as={HashLink} to="/home#home"><span className="text-white">Home</span></Nav.Link>
                             <Nav.Link as={HashLink} to="/home#services"><span className="text-white">Services</span></Nav.Link>
+                            <Nav.Link as={HashLink} to="/talktoexperts"><span className="text-white">Talk To Specialist</span></Nav.Link>
+                            <Nav.Link as={HashLink} to="/aboutus"><span className="text-white">About Us</span></Nav.Link>
                             {
                                 user.email
                                     ?

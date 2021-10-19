@@ -42,7 +42,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer-bottom">
-                <p className="text-center">Copyright &copy; 2021 Therapy Care Point</p>
+                <p className="text-center">Copyright &copy; 2021 <span className="fw-bold">Therapy <span className="text-info">Care</span> Point</span></p>
             </div>
         </>
     );
