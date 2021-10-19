@@ -8,3 +8,4 @@ Live Website Link [Therapy Care Point](https://assignment-therapy-care-point.web
 * Using Google sign you can be logged in.
 * Also you can use your own email address rether then Gmail ID.
 * Newsletter also available to get notification when we release an artical realted to physical therapy.
+* Icon and Fonts added, so that user can increase interaction with website
