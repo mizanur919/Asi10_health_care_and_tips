@@ -11,7 +11,7 @@ const ChooseUs = () => {
                     </div>
                 </div>
                 <div className="row text-center">
-                    <div className="col-md-4">
+                    <div className="col-md-4 mb-4">
                         <div className="service-item shadow-sm p-4 rounded bg-white">
                             <div className="icon my-3 text-info fs-2">
                                 <i class="fas fa-running"></i>
@@ -24,7 +24,7 @@ const ChooseUs = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4 mb-4">
                         <div className="service-item shadow-sm p-4 rounded bg-white">
                             <div className="icon my-3 text-info fs-2">
                                 <i class="fas fa-stethoscope"></i>
@@ -37,7 +37,7 @@ const ChooseUs = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4 mb-4">
                         <div className="service-item shadow-sm p-4 rounded bg-white">
                             <div className="icon my-3 text-info fs-2">
                                 <i class="fas fa-notes-medical"></i>
