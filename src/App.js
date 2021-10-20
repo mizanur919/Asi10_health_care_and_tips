@@ -38,7 +38,7 @@ function App() {
             <PrivateRoute path="/talktoexperts">
               <TalkToExperts></TalkToExperts>
             </PrivateRoute>
-            <Route className="/aboutus">
+            <Route path="/aboutus">
               <AboutUs></AboutUs>
             </Route>
             <Route path="*">

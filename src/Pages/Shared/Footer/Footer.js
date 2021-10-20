@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-4 footer-logo">
-                            <NavLink to="/home" activeStyle={{ color: "#ffffff" }}>Therapy Care Point</NavLink >
+                            <NavLink to="/home" activeStyle={{ color: "#ffffff" }}><span className="text-white text-uppercase fw-bold">Therapy <span className="text-info">Care</span> Point</span></NavLink >
                             <p style={{ padding: "10px 30px 0 0", textAlign: "justify", fontSize: "14px" }}>Physical therapy can help you strengthen the muscles and surrounding muscles associated with your injury.</p>
                         </div>
                         <div className="col-md-4 footer-menu-left d-flex justify-content-center">
