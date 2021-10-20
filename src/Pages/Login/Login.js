@@ -12,6 +12,7 @@ const Login = () => {
     const history = useHistory();
     const redirect_uri = location.state?.from || "/home";
 
+    // Get and set email and password data using useState 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -35,6 +36,7 @@ const Login = () => {
         setPassword(e.target.value);
     }
 
+    // Login Function 
     const handleLogInEmailAndPassword = (e) => {
         e.preventDefault();
         const auth = getAuth();

@@ -14,24 +14,29 @@ const Signup = () => {
 
     const auth = getAuth();
 
+    // Get data from name input filed
     const handleName = e => {
         setName(e.target.value);
     }
 
+    // Get data from email input filed
     const handleEmail = e => {
         setEmail(e.target.value);
     }
 
+    // Get data from password input filed
     const handlePassword = e => {
         setPassword(e.target.value);
     }
 
+    // Sign up function using Email & Password
     const handleSignUp = (e) => {
         e.preventDefault();
         if (password.length < 6) {
             setError('Password should be at least 6 characters');
             return;
         }
+        // Check Password Strength - contain minimum 2 uppercase letters
         if (!/(?=.*[A-Z].*[A-Z])/.test(password)) {
             setError('Password must contain minimum 2 uppercase letters');
             return;
@@ -47,20 +52,6 @@ const Signup = () => {
             })
             .finally(() => setLoading(false))
     }
-
-    // const onSignUp = (e) => {
-    //     e.preventDefault();
-    //     setLoading(true);
-    //     createUserWithEmailAndPassword(auth, email, password)
-    //         .then(() => {
-    //             updateProfile(auth.currentUser, { displayName: name })
-    //                 .then(() => history.push('/home'))
-    //         })
-    //         .catch((error) => {
-    //             alert(error.message);
-    //         })
-    //         .finally(() => setLoading(false))
-    // }
 
     return (
         <div className="login-container d-flex justify-content-center align-items-center">
