@@ -17,21 +17,21 @@ const Header = () => {
 
                     <Navbar.Collapse id="navbarScroll" className="justify-content-end">
                         <Nav
-                            className="mr-auto my-2 my-lg-0"
+                            className="mr-auto my-2 my-lg-0 my-nav"
                             style={{ color: "white" }}
                             navbarScroll
                         >
                             <Nav.Link as={HashLink} to="/home"><span className="text-white">Home</span></Nav.Link>
                             <Nav.Link as={HashLink} to="/home#services"><span className="text-white">Services</span></Nav.Link>
                             <Nav.Link as={HashLink} to="/talktoexperts"><span className="text-white">Talk To Specialist</span></Nav.Link>
+                            <Nav.Link as={HashLink} to="/healthtips"><span className="text-white">Health Tips Pro</span></Nav.Link>
                             <Nav.Link as={HashLink} to="/aboutus"><span className="text-white">About Us</span></Nav.Link>
                             {
                                 user.email
                                     ?
                                     <div>
                                         <Button onClick={logOut} variant="info"><span className="text-white">LogOut</span></Button>
-                                        <span> Hello, {user.displayName} </span>
-                                        <img style={{ width: '40px', height: '40px', borderRadius: '50%' }} src={user.photoURL} alt="" />
+                                        <span className="fw-bold"> Hello, {user.displayName} </span>
                                     </div>
                                     :
                                     <div className="d-flex">

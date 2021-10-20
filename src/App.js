@@ -12,6 +12,7 @@ import Signup from './Pages/Login/Signup/Signup';
 import Footer from './Pages/Shared/Footer/Footer';
 import TalkToExperts from './Pages/TalkToExperts/TalkToExperts';
 import AboutUs from './Pages/AboutUs/AboutUs';
+import HealthTips from './Pages/HealthTips/HealthTips';
 
 function App() {
   return (
@@ -37,6 +38,9 @@ function App() {
             </PrivateRoute>
             <PrivateRoute path="/talktoexperts">
               <TalkToExperts></TalkToExperts>
+            </PrivateRoute>
+            <PrivateRoute path="/healthtips">
+              <HealthTips></HealthTips>
             </PrivateRoute>
             <Route path="/aboutus">
               <AboutUs></AboutUs>

@@ -1,69 +1,88 @@
 import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useHistory } from 'react-router-dom';
 import './Signup.css'
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, sendEmailVerification, updateProfile } from "firebase/auth";
 
 const Signup = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
+    const history = useHistory();
+    const [loading, setLoading] = useState(false);
 
     const auth = getAuth();
 
-    const handleName = e =>{
+    const handleName = e => {
         setName(e.target.value);
     }
 
-    const handleEmail = e =>{
+    const handleEmail = e => {
         setEmail(e.target.value);
     }
 
-    const handlePassword = e =>{
+    const handlePassword = e => {
         setPassword(e.target.value);
     }
 
     const handleSignUp = (e) => {
         e.preventDefault();
-        if(password.length < 6)
-        {
+        if (password.length < 6) {
             setError('Password should be at least 6 characters');
             return;
         }
-        if(!/(?=.*[A-Z].*[A-Z])/.test(password))
-        {
+        if (!/(?=.*[A-Z].*[A-Z])/.test(password)) {
             setError('Password must contain minimum 2 uppercase letters');
             return;
         }
+        setLoading(true);
         createUserWithEmailAndPassword(auth, email, password)
-        .then(result => {
-            console.log(result.user);
-        })
-        .catch(error => {
-            setError(error.message);
-        })
+            .then(() => {
+                updateProfile(auth.currentUser, { displayName: name })
+                    .then(() => history.push('/home'))
+            })
+            .catch((error) => {
+                alert(error.message);
+            })
+            .finally(() => setLoading(false))
     }
+
+    // const onSignUp = (e) => {
+    //     e.preventDefault();
+    //     setLoading(true);
+    //     createUserWithEmailAndPassword(auth, email, password)
+    //         .then(() => {
+    //             updateProfile(auth.currentUser, { displayName: name })
+    //                 .then(() => history.push('/home'))
+    //         })
+    //         .catch((error) => {
+    //             alert(error.message);
+    //         })
+    //         .finally(() => setLoading(false))
+    // }
 
     return (
         <div className="login-container d-flex justify-content-center align-items-center">
             <div className="bg-white p-4 rounded col-md-3 mx-auto align-items-center">
                 <h4 className="font-weight-bold mb-4 text-uppercase">Therapy Care Point</h4>
                 <h6 className="mt-3 mb-4 fw-bold text-info">Create a new account</h6>
-                <Form onSubmit={handleSignUp}>
+                <Form onClick={handleSignUp}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Control onBlur={handleName} type="text" placeholder="Name" required/>
+                        <Form.Control onChange={handleName} type="text" id="name" placeholder="Name" required />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Control onBlur={handleEmail} type="email" placeholder="Enter email" required/>
+                        <Form.Control onChange={handleEmail} type="email" id="email" placeholder="Enter email" required />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Control onBlur={handlePassword} type="password" placeholder="Password" required/>
+                        <Form.Control onChange={handlePassword} type="password" id="password" placeholder="Password" required />
                         <span className="text-danger">{error}</span>
                     </Form.Group>
-                    <button className="btn btn-primary w-100" type="submit">Sign Up</button><br /><br />
+                    <button className="btn btn-primary w-100" type="submit">
+                        {loading ? "Creating Account ..." : "Sign Up"}
+                    </button><br /><br />
                 </Form>
                 <NavLink className="new-account" as={Link} to="/login">Already have an account?</NavLink>
             </div>
